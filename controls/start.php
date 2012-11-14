@@ -2,8 +2,8 @@
 
 function __construct() {
 	
-	load("index.tpl");
-	innerHTML("#main","test");
+//	load("index.tpl");
+//	innerHTML("#main","test");
 	echo html();
 }
 
