@@ -75,12 +75,89 @@ float:left;
 width:660px;
 padding:30px 0 30px 0;
 background:#111;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-moz-box-shadow:#000 0 0 3px;
+-webkit-box-shadow:#000 0 0 3px;
+box-shadow:#000 0 0 3px;
+border-top:#444 1px solid;
 }
+
+div#bonus-area-input {
+display:block;
+float:left;
+margin:0 0 0 30px;
+}
+
+div#bonus-area-input input {
+font-family:Verdana;
+font-size:26px;
+width:430px;
+padding:5px 10px 5px 10px;
+margin:0;
+border:none;
+outline:none;
+background:#fefefe;
+text-align:left;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-moz-box-shadow:0 0 2px #010101;
+-webkit-box-shadow:0 0 2px #010101;
+box-shadow:0 0 2px #010101;
+}
+
+div#bonus-area-input input.bonus-input-blur {
+color:#797979;
+}
+
+div#bonus-area-input input.bonus-input-focus {
+color:#434343;
+}
+
+#bonus-link-check:hover {
+color:#555;
+}
+
+#bonus-link-check {
+font-family:Verdana;
+font-size:18px;
+color:#333;
+display:block;
+float:left;
+padding:11px 17px 10px 17px;
+margin:0 0 0 10px;
+background: #fcfff4;
+background: -moz-linear-gradient(top,  #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(40%,#dfe5d7), color-stop(100%,#b3bead));
+background: -webkit-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
+background: -o-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
+background: -ms-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
+background: linear-gradient(to bottom,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+/*border-top:#78c4e0 1px solid;*/
+border:none;
+-moz-text-shadow:#fff 0 1px 1px;
+-webkit-text-shadow:#fff 0 1px 1px;
+text-shadow:#fff 0 1px 1px;
+-moz-box-shadow:0 0 2px #010101;
+-webkit-box-shadow:0 0 2px #010101;
+box-shadow:0 0 2px #010101;
+text-decoration:none;
+outline:none;
+}
+
+
 
 div#content {
 display:block;
 float:left;
 width:600px;
+padding:10px 0 0 0;
 }
 
 div.content-text {
@@ -131,4 +208,3 @@ float:left;
 width:600px;
 padding:40px 0 0 0;
 }
-
