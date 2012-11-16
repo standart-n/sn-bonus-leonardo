@@ -5,6 +5,10 @@
 		{
 			if (!options) { var options={}; }
 			def={
+				'bonus':
+				{
+					'inputText':'Введите номер карты'
+				},
 				'content':{},
 				'result':{}
 			}

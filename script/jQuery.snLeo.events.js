@@ -12,7 +12,13 @@
 				switch (href.replace(/(.*)#(.*)/,"$2")){
 					case "autoload":
 						var sn=$(this).data('snLeo');
+						if (sn.bonus.inputText) {
+							$("#bonus-area-input input").val(sn.bonus.inputText);
+						}
 						$(this).snLeoTriggers('bonusForm');
+					break;
+					case "checkCard":
+						alert("check");
 					break;
 					case "close":
 						$(this).hide();

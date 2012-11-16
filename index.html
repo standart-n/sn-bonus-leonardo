@@ -31,8 +31,8 @@
 <div id="wrap">
 	<div id="main">
 		<div id="header">
-			<div id="logo">
-			</div>
+			<a href="http://leonardo-picasso.ru" id="logo">
+			</a>
 		</div>
 		<div id="card">
 			<div id="card-image">
@@ -40,10 +40,15 @@
 		</div>
 		<div id="bonus">
 			<div id="bonus-area">
-				<div id="bonus-area-input">
-					<input type="text" class="bonus-input-blur" maxlength="20" value="Введите номер карты">
-				</div>
-				<a href="#check-bonus-card"  id="bonus-link-check">Проверить</a>
+				<form id="bonus-form" action="index.php" method="POST" onSubmit="return false;">
+					<div id="bonus-area-input">
+						<input type="text" class="bonus-input-blur" maxlength="20" value="">
+					</div>
+					<a href="#check-bonus-card"  id="bonus-link-check">Проверить</a>
+					<div class="hidden">
+						<input type="submit" value="submit">
+					</div>
+				</form>
 			</div>
 		</div>
 		<div id="content">
@@ -91,23 +96,23 @@
 				<div class="content-text-table">
 					<table width="350px" align="center" border="0" cellpadding="0" cellspacing="0">
 						<tr class="content-text-nch">
-							<td width="250px">До 100 тыс.руб</td>
+							<td width="250px">Fino a 100 mila rubli</td>
 							<td class="content-text-perc" width="100px" align="right">1%</td>
 						</tr>
 						<tr>
-							<td width="250px">100-300 тыс.руб.</td>
+							<td width="250px">100-300 mila rubli</td>
 							<td class="content-text-perc" width="100px" align="right">1,3%</td>
 						</tr>
 						<tr class="content-text-nch">
-							<td width="250px">300-500 тыс.руб</td>
+							<td width="250px">300-500 mila rubli</td>
 							<td class="content-text-perc" width="100px" align="right">1,5%</td>
 						</tr>
 						<tr>
-							<td width="250px">500-800 тыс.руб.</td>
+							<td width="250px">500-800 mila rubli</td>
 							<td class="content-text-perc" width="100px" align="right">1,7%</td>
 						</tr>
 						<tr class="content-text-nch">
-							<td width="250px">Более 800 тыс.руб.</td>
+							<td width="250px">più di 800 mila rubli</td>
 							<td class="content-text-perc" width="100px" align="right">2%</td>
 						</tr>
 					</table>
@@ -115,7 +120,7 @@
 				<div class="content-text-under">
 					1 bonus pari a 1 rublo<br>
 					Alla fine della stagione i bonus vanno annullati<br>
-					LAmministrazione delle boutique ha il diritto di fare qualsiasi cambiamento e aggiornamento nel programma di bonus.
+					LAmministrazione delle boutique ha il diritto di fare qualsiasi cambiamento e aggiornamento nel programma di bonus.
 				</div>
 			</div>
 
@@ -128,23 +133,23 @@
 				<div class="content-text-table">
 					<table width="350px" align="center" border="0" cellpadding="0" cellspacing="0">
 						<tr class="content-text-nch">
-							<td width="250px">До 100 тыс.руб</td>
+							<td width="250px">Up to 100 thousands rubles</td>
 							<td class="content-text-perc" width="100px" align="right">1%</td>
 						</tr>
 						<tr>
-							<td width="250px">100-300 тыс.руб.</td>
+							<td width="250px">100-300 thousands rubles</td>
 							<td class="content-text-perc" width="100px" align="right">1,3%</td>
 						</tr>
 						<tr class="content-text-nch">
-							<td width="250px">300-500 тыс.руб</td>
+							<td width="250px">300-500 thousands rubles</td>
 							<td class="content-text-perc" width="100px" align="right">1,5%</td>
 						</tr>
 						<tr>
-							<td width="250px">500-800 тыс.руб.</td>
+							<td width="250px">500-800 thousands rubles</td>
 							<td class="content-text-perc" width="100px" align="right">1,7%</td>
 						</tr>
 						<tr class="content-text-nch">
-							<td width="250px">Более 800 тыс.руб.</td>
+							<td width="250px">Above 800 thousands rubles</td>
 							<td class="content-text-perc" width="100px" align="right">2%</td>
 						</tr>
 					</table>
