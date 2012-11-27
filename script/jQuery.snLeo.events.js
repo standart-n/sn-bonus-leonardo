@@ -18,7 +18,28 @@
 						$(this).snLeoTriggers('bonusForm');
 					break;
 					case "checkCard":
-						alert("check");
+						var card_val=$("#bonus-area-input input").val();
+						$(this).snLeoAjax('sendRequest',{'action':'show','card':card_val,'debug':false});
+					break;
+					case "afterCheckCard":
+						var sn=$(this).data('snLeo');
+						var rt=false;
+						//$("#bonus-response-outer").show();
+						if (sn.result) {
+							if (sn.result.bonus) {
+								if (sn.result.bonus.exists!=undefined) {
+									$("#bonus-exists").html(sn.result.bonus.exists)
+									$("#bonus-summ").show();
+									$("#bonus-fail").hide();
+									rt=true;
+								}
+							}
+						}
+						if (!rt) {
+							$("#bonus-summ").hide();
+							$("#bonus-fail").show();
+						}
+						$("#bonus-response-outer").slideDown();
 					break;
 					case "close":
 						$(this).hide();

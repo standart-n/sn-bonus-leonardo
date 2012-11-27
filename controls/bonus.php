@@ -22,6 +22,7 @@ function getCardInfo() {
 	if (query(sql::getCardInfo(url::$card),$ms)) {
 		foreach ($ms as $r) {
 			if (isset($r->bonus_exists)) {
+				self::$j['callback']="afterCheckCard";
 				self::$j['bonus']['exists']=intval($r->bonus_exists);
 				return true;
 			}

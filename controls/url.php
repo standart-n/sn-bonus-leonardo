@@ -1,14 +1,14 @@
 <?php class url extends sn {
 	
 public static $action;
-public static $card;
 public static $callback;
+public static $card;
 
 function __construct() {
 	
 }
 
-function getUrl {
+function getUrl() {
 	if (isset($_REQUEST["action"])) {
 		self::$action=trim(strval($_REQUEST["action"]));
 	}
@@ -18,10 +18,12 @@ function getUrl {
 
 	if (isset(self::$action)) {
 		switch (self::$action) {
-			if (!isset($_REQUEST["card"])) { return false; }
-			self::$card=intval(trim(strval($_REQUEST["card"])));
-			return true;		
-		}	
+			case "show":
+				if (!isset($_REQUEST["card"])) { return false; }
+				self::$card=intval(trim(strval($_REQUEST["card"])));
+				return true;
+			break;
+		}
 	}
 	return false;
 }

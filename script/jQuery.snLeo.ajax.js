@@ -14,10 +14,7 @@
 				'type':'json',
 				'debug':false,
 				'action':'build',
-				'content':'',
-				'folder':'',
-				'text':'',
-				'file':''
+				'card':''
 			};
 			$.extend(true,def,options);
 			if (def.debug) { def.type='text'; }
@@ -27,26 +24,23 @@
 				type:'POST',
 				data:{
 					action:def.action,
-					region:sn.region.name,
-					theme:sn.theme.name,
-					text:def.text,
-					file:def.file,
-					folder:def.folder,
-					content:def.content
+					card:def.card,
 				},
 				dataType:def.type,
 				timeout:10000,
 				beforeSend:function(){
-					$("#status").empty().addClass("loading");
+					//$("#status").empty().addClass("loading");
 				},
 				success:function(s){
-					$.extend(true,sn.result,s);
+					//$.extend(true,sn.result,s);
+					sn.result=s;
 					if (def.debug) { alert(s); }
-					$("#status").empty().removeClass("loading");
+					//$("#status").empty().removeClass("loading");
 					$(this).data('snLeo',sn);
-					if (sn.result.status) { $("#status").html(sn.result.status); }
-					if (sn.result.alert) { alert(sn.result.alert); }
-					if (sn.result.callback) { $(this).snLeoEvents({'href':'#'+sn.result.callback}); }
+					//if (sn.result.status) { $("#status").html(sn.result.status); }
+					//if (sn.result.alert) { alert(sn.result.alert); }
+					$(this).snLeoEvents({'href':'#afterCheckCard'});
+					//if (sn.result.callback) { $(this).snLeoEvents({'href':'#'+sn.result.callback}); }
 				},
 				error:function(XMLHttpRequest,textStatus,error){ 
 					$("#status").html(error).removeClass("loading");

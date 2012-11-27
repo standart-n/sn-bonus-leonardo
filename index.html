@@ -42,13 +42,27 @@
 			<div id="bonus-area">
 				<form id="bonus-form" action="index.php" method="POST" onSubmit="return false;">
 					<div id="bonus-area-input">
-						<input type="text" class="bonus-input-blur" maxlength="20" value="">
+						<input id="bonus-card-number" type="text" class="bonus-input-blur" maxlength="20" value="">
 					</div>
 					<a href="#check-bonus-card"  id="bonus-link-check">Проверить</a>
 					<div class="hidden">
 						<input type="submit" value="submit">
 					</div>
 				</form>
+			</div>
+		</div>
+			<div id="bonus-response-outer">
+			<div id="bonus-response">
+				<div id="bonus-summ">
+					<div class="bonus-summ-label">Бонусов на Вашей карте:</div>
+					<div id="bonus-exists" class="bonus-summ-value"></div>
+					<!--
+					<div class="bonus-summ-postfix">бонусов</div>
+					-->
+				</div>
+				<div id="bonus-fail">
+					<div class="bonus-summ-warning">Неверный номер карты!</div>
+				</div>
 			</div>
 		</div>
 		<div id="content">
